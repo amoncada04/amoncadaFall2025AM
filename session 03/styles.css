@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(155, 216, 247);
+    color: rgb(16, 2, 86);
+     
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+
+
+
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, blockquote {margin: 0;}
+p { font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+header {
+    background-color: #bdccff;
+    text-align: center;
+    border:10px #1e3a96;
+    padding: 20px;
+    margin: 0px 20px;
+letter-spacing: 3px ;
+
+}
+nav {
+    background-color: #c2c4ff;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+}
+
+nav a {
+color: #020e5c;
+text-decoration: none;
+margin: 0px 20px;
+letter-spacing: 3px ;
+}
+
+nav a:hover {
+color: #08b5ef;
+text-decoration: underline;
+}
+
+main {
+    background-color: #6cc9f8;
+   padding: 60px;
+
+}
+main h2 {
+font-size: 22px;
+margin: 0px 20px;
+letter-spacing: 3px ;
+}
+
+main h3 {
+font-size: 20px;
+margin: 0px 20px;
+letter-spacing: 3px ;
+}
+
+footer {
+    background-color: #4044b5;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+main {
+
+div {
+  width: 50px;
+  height: 400px;
+  border: 1px solid #b9e9ef;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+}
+
+main {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+nav
+{
+  rotate: 180deg;
+}
+
+header{
+  margin-bottom: 20px;
+  border-style: dotted;
+  border-color: rgb(202, 140, 60);
+}
+
+nav {
+  border-style:dashed;
+  border-width: 15px;
+  
+}
+
+main {
+  direction: rtl;
+}
