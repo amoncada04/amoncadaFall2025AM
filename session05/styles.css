@@ -1,0 +1,129 @@
+body {
+    background-color: #000;
+    background-image: url("images/moss04.jpg");
+    background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+    /* background-position-y: bottom;  */
+
+    margin: 0;
+    padding: 0;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    /* 200 – 800 */
+    font-style: normal;
+
+}
+
+/* id rule uses hashtag #, only one per page */
+#wrapper {
+    margin: 100px auto;
+    width: 60%;
+    background-color: #fff;
+    padding: 30px 50px;
+        /* background-image: url("images/moss03.jpg"); */
+}
+
+/* class rules use a period to make a rule about a class, use multiple times */
+.wow {
+    color: rgb(255, 177, 243);
+    font-weight: 900;
+    font-style: italic;
+}
+
+header h1 {
+
+    font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 66px;
+    border: 15px solid rgb(74, 1, 38);
+    border-style: dashed;
+    text-align: center;
+}
+
+main p {
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+table, th, td, tr {
+margin: 20px;
+padding: 10px;
+
+}
+
+
+main table {
+border: 10px solid rgb(74, 1, 38);
+    background-color: rgb(171, 6, 75);
+    padding: 20px;
+margin: 10px;
+}
+
+main table th {
+border: 5px solid rgb(253, 150, 245);
+    background-color: rgb(250, 222, 241);
+        font-family: "Bitcount Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    /* 100-900 */
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 33px;
+    padding:22px;
+
+}
+
+main table td {
+border: 5px solid rgb(237, 167, 167);
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+main h2 {
+    border: solid 20px rgb(190, 2, 102);
+    background-color: rgb(255, 164, 220);
+    font-size: 33px;
+    padding: 50px 10px 10px 10px;
+    margin:100px 0px 20px 0px;
+    text-align: center;
+}
+
+main div.featuredImage {
+    border: 20px solid rgb(255, 232, 157);
+    background-color: rgb(249, 189, 115);
+    padding: 40px;
+    width: 200px;
+    margin: 100px auto;
+    text-align: center;
+}
+main div.featuredImage img {
+    width: 100%;
+    border: 20px;
+}
+
+
+nav {
+border: 5px solid rgb(74, 1, 38);
+ background-color: rgb(251, 207, 235);
+border-style: dotted;
+text-color: rgb(255, 164, 220) ;
+text-align: center;
+text-decoration: wavy;
+padding: 25px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+nav a:hover {
+color: #cd41a0;
+
+}
