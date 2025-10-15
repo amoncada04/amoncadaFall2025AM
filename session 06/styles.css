@@ -1,0 +1,98 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: #fab6f2;
+    color: #000000;
+}
+
+div.container {
+    width: 80%;
+    background-color: #f88cec;
+    /* center the div container */
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #db1672;
+
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    background-color: #4e0a46;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: 120px;
+}
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+nav a:hover {
+    color: #db1672;
+}
+main {
+    background-color: #fcf4bb;
+    width: 70%;
+  margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-style: dotted;
+  border-radius: 70px;
+    float: right;
+  
+}
+section {
+    background-color: #f88cec;
+    border-radius: 5px;
+    padding:30px;
+    margin: 20px;
+}
+aside {
+    background-color: #fcf4bb;
+    width: 30%;
+    height: 100%;
+   background-position: 30px;
+    float: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   margin-left: 20px;
+   border: #000000;
+  border-style: dotted;
+  border-radius: 70px;
+  
+  
+}
+footer {
+    background-color: #db1672;
+    float: right;
+    clear: both;
+    border-radius: 30px;
+}
