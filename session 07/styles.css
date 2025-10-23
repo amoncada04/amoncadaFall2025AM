@@ -1,0 +1,182 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+     background-color: rgb(94, 215, 255);
+ background-image: url("images/11.jpg");
+    background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+    /* background-position-y: bottom;  */
+
+}
+
+#wrapper {
+  margin: 0px auto;
+  /* centers the wrapper */
+  background-color:  rgb(94, 215, 255);
+  max-width: 1000px;
+  border: 20px;
+  border-style: dashed;
+  border-color:  rgb(245, 92, 50);
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* Add padding to all of the #wrapper child elements */
+#wrapper>* {
+  padding: 20px;
+  
+}
+
+header {
+  background-color: rgb(145, 191, 254);
+   color: rgb(46, 164, 152);
+     order: 1;
+         flex: 1 0 100%;
+   position: sticky;
+    top: 0;
+    z-index: 1;
+
+
+          border-radius: 100px;
+          text-transform: uppercase;
+          text-decoration: underline;
+          text-align: center;
+           margin-bottom: 20px;
+           font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+          
+
+
+}
+
+h2,h3 {font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+        
+
+}
+main {
+  background-color:  rgb(245, 168, 147);
+   color: rgb(46, 164, 152);
+     order: 3;
+       flex: 1 1 500px;
+
+       border-radius: 100px;
+       border-style: dotted;
+       border-color:   rgb(245, 92, 50);
+       border-width: 10px;
+       text-align: center;
+       margin-top: 20px;
+       margin-bottom: 20px;
+       margin-left: 30px;
+       margin-right: 30px;
+
+       font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+}
+nav {
+  background-color:  rgb(253, 198, 183);
+   color: rgb(46, 164, 152);
+     order: 2;
+       flex: 1 0 100px;
+
+ border-radius: 70px;
+ text-align: left;
+ text-transform: uppercase;
+ font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+
+
+
+aside {
+  background-color:  rgb(247, 149, 121);
+   color: rgb(46, 164, 152);
+     order: 4;
+       flex: 1 0 200px;
+
+        border-radius: 70px;
+        text-align: right;
+        font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+        
+
+}
+footer {
+background-color:  rgb(182, 207, 242);
+color: rgb(46, 164, 152);
+   order: 5;
+     flex: 1 0 100px;
+
+ border-radius: 70px;
+ margin-top: 20px;
+font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* SUBSCRIBE BUTTON */
+div.buttonAbsolute {
+     background-color: rgb(152, 212, 251);
+    opacity: 1.0;
+    text-align: center;
+    color: rgb(46, 164, 152);
+    width: 150px;
+    border-radius: 125px;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* view gallery button */
+div.buttonRelative {
+     background-color: rgb(152, 212, 251);
+    color: rgb(46, 164, 152);
+    text-align: center;
+     border-radius: 125px;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+    left: 120px;
+    z-index: 3;
+}
+
+nav a {
+background-color:  rgb(229, 160, 141);
+background-size: 50px;
+color: #ffffff;
+width: 100px;
+border-style: solid;
+border-width: 10px;
+border-radius: 30px;
+border-color: #94e6ff;
+text-decoration: none;
+
+
+}
+
+nav a:hover {
+color: #1c6278;
+text-decoration: none;
+}
