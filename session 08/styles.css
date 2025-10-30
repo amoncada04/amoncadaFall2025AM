@@ -1,0 +1,146 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* remove margin and padding on body */
+
+  padding: 0;
+  margin: 0;
+  background-color: rgb(222, 255, 169);
+  background-image: url("images/11.jpg");
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  width: 80%;
+ margin: 0 auto;
+ display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: rgb(179, 155, 115);
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+  text-align: center;
+font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #2f5535;
+}
+
+main {
+  background:  rgb(245, 220, 137);
+  /* span 6 cols */
+  grid-column: 1 / 10;
+text-align: center;
+ font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #543804;
+  border: #2c2314;
+  border-style: groove;
+  border-width: 25px;
+
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav {
+  background:rgb(250, 233, 174);
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+
+  text-align: center;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #543804;
+  
+
+ 
+}
+
+aside {
+  background: rgb(244, 210, 99);
+  /* span 3 cols */
+  grid-column: 10 / 13;
+  text-align: right;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #543804;
+
+}
+
+/* span 2 rows */
+main,
+aside {
+  grid-row: 3 / 4;
+}
+
+footer {
+  background:  rgb(64, 79, 52);
+    /* span all 12 cols*/
+  grid-column: 1 / 13;
+  text-align: center;
+   font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #543804;
+  list-style: none;
+  
+
+}
+
+nav a {
+text-decoration: none;
+border-style: ridge;
+border-width: 9px;
+padding: 9px;
+background-color: #b0dcb6;
+border-color: #b0dcb6;
+border-radius: 100px;
+color: #005126;
+
+}
+
+nav a:hover{
+background-color: #e1ee98;
+  
+}
+
+img {
+  border: 15px solid #946200;
+  border-style: ridge;
+  border-radius: 23px;
+}
