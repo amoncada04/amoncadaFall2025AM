@@ -1,0 +1,201 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-color: #c6fab6;
+    background-image: url("images/14.jpg");
+
+
+}
+
+/* Grouping example */
+h1,
+h2 {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+
+.wrapper {
+  background-color: #c6fab6;
+   background-image: url("images/14.jpg");
+  /* grid layout parent */
+  display: grid;
+  /* create 12 col layout */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: #f6dbb0;
+  color: #f5a31e;
+  /* span all 12 cols*/
+  grid-column: 1 / 13;
+
+   font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  border-style: ridge;
+  border-color: #ff9d00;
+  border-width: 35px;
+  margin-bottom: 30px;
+  position: sticky;
+    top: 0;
+    z-index: 1;
+  
+}
+
+main {
+  background: #99d0ff;
+  color: #0088ff;
+  /* span 6 cols */
+  grid-column: 5 / 13;
+
+   font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  border-style: ridge;
+  border-color: #329fff;
+  border-width: 35px;
+  margin-bottom: 30px;
+}
+
+nav {
+  background: #ffb0f2;
+/* span 3 cols */
+  grid-column: 1 / 13;
+text-align: center;
+
+font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  border-style: ridge;
+  border-color: #f571df;
+  border-width: 35px;
+  margin: 30px;
+   word-spacing: 60px;
+
+}
+
+nav a{
+color: #f571df;
+text-decoration: none;
+border-width: 10px;
+border-color: #f571df;
+border-style: outset;
+
+
+}
+
+nav a:hover{
+background-color: #bc0087;
+  
+}
+
+aside {
+  background: #ffb0f2;
+/* span 3 cols */
+  grid-column: 1 / 5;
+
+  font-size: 15px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-style: ridge;
+  border-color: #f571df;
+  border-width: 35px;
+  margin: 30px;
+  text-align: center
+  
+   
+    
+}
+
+/* span 2 rows */
+main,
+aside {
+  grid-row: 2 / 4;
+}
+
+div.buttonAbsolute {
+    background-color: #c6fab6;
+    opacity: 1.0;
+    text-align: center;
+    color: #56d031;
+    width: 150px;
+    border-radius: 125px;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    border-style: dashed;
+    width: 100px;
+  height: 10px;
+  background-color: #c6fab6;
+  animation-name: subscribefly;
+  animation-duration: 10s;
+  animation-direction: normal;
+  
+  
+}
+@keyframes subscribefly {
+ from {right: 30px;}
+  to {right: 1000px;}
+}
+
+
+footer {
+  background:#f9d7a1 ;
+  display: flex;
+ flex-flow: wrap;
+flex-direction: column;
+order: 5;
+     flex: 100px;
+
+     
+     
+font-size: 15px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: 20px;
+  color: #ff9d00;
+
+}
+
+aside a{
+text-decoration: none;
+color: #f571df;
+  border-width: 5px;
+border-color: #f571df;
+border-style: outset;
+}
+
+aside a:hover{
+  background-color: #bc0087;
+}
